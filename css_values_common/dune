@@ -1,0 +1,6 @@
+(library
+ (name css_values_common)
+ (public_name css_values.css_values_common)
+ (libraries core css_spec_types core_kernel.nonempty_set)
+ (preprocess
+  (pps ppx_jane -compare-require-explicit-locality)))

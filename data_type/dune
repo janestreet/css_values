@@ -1,0 +1,6 @@
+(library
+ (name css_data_type)
+ (public_name css_values.data_type)
+ (preprocess
+  (pps ppx_jane -compare-require-explicit-locality))
+ (libraries core))
