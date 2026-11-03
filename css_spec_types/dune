@@ -1,0 +1,6 @@
+(library
+ (name css_spec_types)
+ (public_name css_values.css_spec_types)
+ (preprocess
+  (pps ppx_jane ppx_jsonaf_conv -compare-require-explicit-locality))
+ (libraries angstrom core jsonaf of_json))

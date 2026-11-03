@@ -1,0 +1,6 @@
+(library
+ (name css_values_category_map)
+ (public_name css_values.category_map)
+ (libraries css_values_common core_kernel.nonempty_set)
+ (preprocess
+  (pps ppx_jane -compare-require-explicit-locality)))
